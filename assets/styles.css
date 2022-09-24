@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1B1F27;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden; /* p/ n aparecer barra de rolagem no navegador*/
+}
+
+.area-login {
+    display: flex;
+    height: 100vh; /* pegar toda a tela do navegador*/
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login {
+    background-color: #181920;
+    height: 320px;
+    width: 355px;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column; /* p que um input fique em cima do outro */
+    width: 100%;
+}
+
+.login h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.login input {
+    margin-top: 10px;
+    background-color: #252A34;
+    color: #CBD0F7;
+    padding-left: 10px;
+    border: none;
+    height: 45px;
+    outline: none;  /* remover as bordas que aparecem ao clicar no input */
+    border-radius: 8px;
+}
+
+input::placeholder {
+    color: #CBD0F7;
+    font-size: 13px;
+}
+
+form [type="submit"] {
+    display: block;
+    background-color: #5568FE;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer; /*maozinha do cursor */
+}
+
+p {
+    color: #CBD0F7;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+a {
+    color: #5568FE;
+    text-decoration: none;
+    margin-left: 5px;
+}
